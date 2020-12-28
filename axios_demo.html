@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    /Users/apple/envs/env05/myproj/myapp/axios_demo.html
+    <span id="ss">span</span>
+    <button id="btn"> click me</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script>
+        let result;
+        axios.get("http://127.0.0.1:5000/getName")
+            .then((res) => {result = res;})
+        document.getElementById("btn").click(function(){alert('222')})
+        
+            
+    </script>
+</body>
+</html>
